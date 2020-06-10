@@ -23,10 +23,10 @@ finally you can run the web app
 
 
 # Note 
-Before you run the server you have to create a new file javascript named dev.js to run npm run dev
-so go to directory server/config, and create dev.js file in that directory.
+Before you run the server you have to create a new file javascript named 'dev.js' to run 'npm run dev'
+so go to directory server/config, and create 'dev.js' file in that directory.
 
-copy this code to dev.js
+copy this code to 'dev.js'
 
 module.exports = {
       mongoURI:"yourDatabaseConnection"
