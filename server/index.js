@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const cors = require('cors')
-
+const aws = require("aws-sdk");
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 
@@ -57,6 +57,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 const port = process.env.PORT || 5000
+const S3_BUCKET = process.env.S3_BUCKET
 
 app.listen(port, () => {
   console.log(`Server Listening on ${port}`)
