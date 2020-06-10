@@ -1,3 +1,3 @@
 module.exports = {
-    mongoURI:process.env.MONGO_URI
+    mongoURI:'mongodb+srv://ericcornetto:nevermind2000@cluster0-l0tap.mongodb.net/happytube?retryWrites=true&w=majority'
 }
