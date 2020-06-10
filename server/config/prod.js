@@ -1,3 +1,3 @@
 module.exports = {
-    mongoURI:'mongodb+srv://ericcornetto:nevermind2000@cluster0-l0tap.mongodb.net/happytube?retryWrites=true&w=majority'
+    mongoURI:'mongodb://erictube:nevermind2000@ds159563.mlab.com:59563/heroku_shr8sg2d'
 }
