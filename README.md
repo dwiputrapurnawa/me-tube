@@ -1,2 +1,2 @@
 # happy-tube
-Youtube Clone Website for Final Exam Web Programming
+Social Video Stream Website for Final Exam Web Programming
