@@ -15,17 +15,19 @@ Next,install in client also:
 1. cd client/
 2. npm install
 
-Then you go back to previous directory or in server 
+Then you go back to previous directory in server 
 1. cd ..
 
 finally you can run the web app
 1. npm run dev
+
 
 # Note 
 Before you run the server you have to create a new file javascript named dev.js to run npm run dev
 so go to directory server/config, and create dev.js file in that directory.
 
 copy this code to dev.js
+
 module.exports = {
       mongoURI:"yourDatabaseConnection"
 }
