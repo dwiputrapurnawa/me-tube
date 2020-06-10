@@ -11,8 +11,8 @@ Server Node Install :
 2. npm install
 
 Next,install in client also:
-2. cd client/
-3. npm install
+1. cd client/
+2. npm install
 
 Then you can back to previous directory or in server 
 1. cd ..
