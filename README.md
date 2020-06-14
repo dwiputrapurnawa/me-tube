@@ -1,5 +1,5 @@
 # eric-tube
-Social Video Stream Website
+Social Video Stream Website Project
 
 # 
 
