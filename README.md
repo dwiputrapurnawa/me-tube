@@ -25,10 +25,10 @@ https://www.ffmpeg.org/download.html#build-windows
 -but if you using linux, you can download in here https://tracker.debian.org/pkg/ffmpeg
 
 Then you go back to previous directory in server 
-1. cd ..
+- cd ..
 
 finally you can run the web app
-1. npm run dev
+- npm run dev
 
 
 # Note 
