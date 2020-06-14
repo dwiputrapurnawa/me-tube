@@ -19,10 +19,9 @@ if you got error about bcrypt during install node modules, you have to install b
 - npm install --save bcrypt
 
 then dont forget to install ffmpeg in your operating system
-- if you using windows , you can download in bellow link
-https://www.ffmpeg.org/download.html#build-windows
+- if you using windows , you can download in here https://www.ffmpeg.org/download.html#build-windows
 
--but if you using linux, you can download in here https://tracker.debian.org/pkg/ffmpeg
+- but if you using linux, you can download in here https://tracker.debian.org/pkg/ffmpeg
 
 Then you go back to previous directory in server 
 - cd ..
