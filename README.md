@@ -5,15 +5,24 @@ Social Video Stream Website for Final Exam Web Programming
 
 # HOW TO RUN
 
-Firstly you have to install node module in client and server directory separately
+Firstly you have to install node modules in client and server directory separately
 
-Server Node Install :
-1. cd eric-tube
-2. npm install
+Server Node modules Install :
+- cd eric-tube
+- npm install
 
 Next,install in client also:
-1. cd client/
-2. npm install
+- cd client/
+- npm install
+
+if you got error about bcrypt during install node modules, you have to install bcrypt module in server
+- npm install --save bcrypt
+
+then dont forget to install ffmpeg in your operating system
+- if you using windows , you can download in bellow link
+https://www.ffmpeg.org/download.html#build-windows
+
+-but if you using linux, you can download in here https://tracker.debian.org/pkg/ffmpeg
 
 Then you go back to previous directory in server 
 1. cd ..
