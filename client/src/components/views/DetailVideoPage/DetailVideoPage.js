@@ -57,7 +57,7 @@ function DetailVideoPage(props) {
                         >
                             <List.Item.Meta
                                 avatar={<Avatar src={Video.writer && Video.writer.image} />}
-                                title={<a href="https://ant.design">{Video.title}</a>}
+                                title={<a href="https://github.com/EricCornetto/eric-tube">{Video.title}</a>}
                                 description={Video.description}
                             />
                             <div></div>

@@ -17,6 +17,7 @@ Next,install in client also:
 
 if you got error about bcrypt during install node modules, you have to install bcrypt module in server
 - npm install --save bcrypt
+- npm install
 
 then dont forget to install ffmpeg in your operating system
 - if you using windows , you can download in here https://www.ffmpeg.org/download.html#build-windows
