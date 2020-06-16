@@ -1,6 +1,9 @@
 # eric-tube
 Social Video Stream Website Project
 
+Social Video Stream Website Application Project is platform where you can watch,upload, and of course socialize with another user
+this project is similiar with youtube ( yeah I got inspiration to develop this project beacuse of youtube :3 ). I hope this project can help you , who's still struggle with your project :3, and This project develop by used expressjs + reactjs.
+
 # 
 
 # HOW TO RUN
