@@ -3,7 +3,7 @@ import { FaCode } from "react-icons/fa";
 import { Card, Avatar, Col, Row } from 'antd';
 import axios from 'axios';
 import moment from 'moment';
-import { CardActions,CardContent,Typography } from '@material-ui/core'
+import { Typography, LinearProgress } from '@material-ui/core'
 
 const { Meta } = Card
 
@@ -32,7 +32,8 @@ function LandingPage() {
         var minutes = Math.floor(video.duration / 60);
         var seconds = Math.floor(video.duration - minutes * 60);
 
-        return <Col lg={6} md={8} xs={24}>
+        if(video.writer){
+            return  <Col lg={6} md={8} xs={24}>
             <div style={{ position: 'relative' }}>
                 <a href={`video/${video._id}`}>
                 <img style={{ width: '100%' }} alt="thumbnail" src={`http://localhost:5000/${video.thumbnail}`} />
@@ -52,25 +53,29 @@ function LandingPage() {
                 title={video.title}
             />
             <span>{video.writer.name} </span><br />
-            {/* <span style={{ marginLeft: '3rem' }}>{video.views}</span> */}
+            <span style={{ marginLeft: '3rem' }}></span>
             <span> {moment(video.createdAt).format("MMM Do YY")} </span>
+            <br />
+            <br />
             
         </Col>
+        }else{
+            return <LinearProgress color='secondary' />
+        }
 
     })
 
-
-
-    return (
-        <div style={{ width: '85%', margin: '3rem auto' }}>
-            <Typography level={2} style={{ fontSize: '2rem', color: 'black' }} ><b>Recommended</b></Typography>
-            <hr />
-
-            <Row gutter={16}>
-                {renderCards}
-            </Row>
-        </div>
-    )
+        return (
+            <div style={{ width: '85%', margin: '3rem auto' }}>
+                <Typography level={2} style={{ fontSize: '2rem', color: 'black' }} ><b>Recommended</b></Typography>
+                <hr />
+                
+                <Row gutter={16}>
+                    {renderCards}
+                </Row>
+            </div>
+        )
+    
 }
 
 export default LandingPage

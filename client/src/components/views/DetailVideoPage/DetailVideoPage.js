@@ -5,6 +5,9 @@ import SideVideo from './Sections/SideVideo';
 import Subscriber from './Sections/Subscriber';
 import Comments from './Sections/Comments'
 import LikeDislikes from './Sections/LikeDislikes';
+import { Helmet } from 'react-helmet'
+import { LinearProgress } from '@material-ui/core'
+
 function DetailVideoPage(props) {
 
 
@@ -46,8 +49,12 @@ function DetailVideoPage(props) {
 
 
     if (Video.writer) {
+        
         return (
             <Row>
+                 <Helmet>
+                <title>{Video.title}</title>
+            </Helmet>
                 <Col lg={18} xs={24}>
                     <div className="postPage" style={{ width: '100%', padding: '3rem 4em' }}>
                         <video style={{ width: '100%' }} src={`http://localhost:5000/${Video.filePath}`} controls></video>
@@ -77,7 +84,7 @@ function DetailVideoPage(props) {
 
     } else {
         return (
-            <div>Loading...</div>
+            <LinearProgress color="secondary" />
         )
     }
 

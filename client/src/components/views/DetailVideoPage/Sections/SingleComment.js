@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import { Comment, Avatar, Button, Input} from 'antd'
+import { Comment, Avatar } from 'antd'
 import axios from 'axios'
 import { useSelector } from 'react-redux'
 import LikeDislike from './LikeDislikes'
-const { TextArea } = Input
+import { TextField, Button, Icon } from '@material-ui/core'
 
 
 
@@ -70,14 +70,15 @@ function SingleComment(props){
             {OpenReply &&
                  <form style={{ display:'flex'}} onSubmit={onSubmit}>
                     
-                 <TextArea
+                 <TextField
                      style={{ width: '100%', borderRadius: '5px'}}
                      onChange={handleChange}
                      value={CommentValue}
                      placeholder= "write some comments"
+                     variant='outlined'
                  />
                  <br />
-                 <Button style={{ width: '20%', height: '52px'}} onClick={onSubmit}>Submit</Button>
+                 <Button style={{ width: '20%', height: '52px', marginLeft: '1rem'}} variant="contained" color="secondary" onClick={onSubmit}>Send</Button>
              </form>
             }    
                 

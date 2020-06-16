@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react'
-import { FaCode } from "react-icons/fa";
-import { Card, Avatar, Col, Typography, Row } from 'antd';
+import React, { useEffect, useState } from 'react';
+import { Card, Avatar, Col, Row } from 'antd';
 import axios from 'axios';
 import moment from 'moment';
-const { Title } = Typography;
+import { Typography } from '@material-ui/core'
+
 const { Meta } = Card;
 
 function SubscriptionPage(){
@@ -48,15 +48,15 @@ function SubscriptionPage(){
                 title={video.title}
             />
             <span>{video.writer.name} </span><br />
-            <span style={{ marginLeft: '3rem' }}> {video.views}</span>
-            - <span> {moment(video.createdAt).format("MMM Do YY")} </span>
+            <span style={{ marginLeft: '3rem' }}></span>
+            <span> {moment(video.createdAt).format("MMM Do YY")} </span>
         </Col>
 
     })
 
     return (
         <div style={{ width: '85%', margin: '3rem auto' }}>
-            <Title level={2} > Subscribed Video </Title>
+             <Typography level={2} style={{ fontSize: '2rem', color: 'black' }} ><b>Subscribed Videos</b></Typography>
             <hr />
 
             <Row gutter={16}>

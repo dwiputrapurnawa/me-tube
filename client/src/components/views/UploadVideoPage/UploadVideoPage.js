@@ -3,9 +3,10 @@ import {  Form, Icon } from 'antd'
 import Dropzone from 'react-dropzone'
 import axios from 'axios'
 import { useSelector } from "react-redux"
-import { TextField, Typography, Container, Grid, Paper, Select,FormControl, InputLabel, Button } from '@material-ui/core'
+import { TextField, Typography, Container, Grid, Paper, Select,FormControl, InputLabel, Button, CircularProgress } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import { CloudUpload } from '@material-ui/icons'
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -40,6 +41,8 @@ const Category = [
     {value:0, label: "Music"},
     {value:0, label: "Pets & Animals"},
     {value:0, label: "Sports"},
+    {value:0, label: "Programming"},
+    {value:0, label: "Science"}
 ]
 
 function UploadVideoPage(){
@@ -99,6 +102,7 @@ function UploadVideoPage(){
             .then(response => {
                 if(response.data.success){
                     alert('video uploaded successfully')
+                    window.location.href = "/"
 
                 }else{
                     alert('Failed to upload video')

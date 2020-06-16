@@ -5,6 +5,7 @@ import { Drawer, Button, Icon } from 'antd';
 import './Sections/Navbar.css';
 const Logo = require('../../../assets/images/logo.png');
 
+
 function NavBar() {
   const [visible, setVisible] = useState(false)
 
