@@ -1,4 +1,4 @@
-# eric-tube
+# MeTube
 Social Video Stream Website Project
 
 Social Video Stream Website Application Project is platform where you can watch,upload, and of course socialize with another user.
@@ -11,7 +11,7 @@ This project is similiar with youtube ( yeah I got inspiration to develop this p
 Firstly you have to install node modules in client and server directory separately
 
 Server Node modules Install :
-- cd eric-tube
+- cd me-tube
 - npm install
 
 Next,install in client also:
