@@ -43,7 +43,7 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 35033
 const S3_BUCKET = process.env.S3_BUCKET
 
 app.listen(port, () => {
