@@ -182,7 +182,7 @@ function UploadVideoPage(){
                     </Grid>
                     {Thumbnail !== "" &&
                                 <div>
-                                    <img src={`http://localhost:35033/${Thumbnail}`} alt="thumbnail" />
+                                    <img src={`http://localhost:8080/${Thumbnail}`} alt="thumbnail" />
                                 </div>
                             }
                 </Grid>

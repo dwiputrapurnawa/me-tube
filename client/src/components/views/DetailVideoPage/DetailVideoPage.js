@@ -57,14 +57,14 @@ function DetailVideoPage(props) {
             </Helmet>
                 <Col lg={18} xs={24}>
                     <div className="postPage" style={{ width: '100%', padding: '3rem 4em' }}>
-                        <video style={{ width: '100%' }} src={`http://localhost:35033/${Video.filePath}`} controls></video>
+                        <video style={{ width: '100%' }} src={`http://localhost:8080/${Video.filePath}`} controls></video>
 
                         <List.Item
                             actions={[<LikeDislikes video videoId={videoId} userId={localStorage.getItem('userId')}  />, <Subscriber userTo={Video.writer._id} userFrom={localStorage.getItem('userId')} />]}
                         >
                             <List.Item.Meta
                                 avatar={<Avatar src={Video.writer && Video.writer.image} />}
-                                title={<a href="https://github.com/EricCornetto/eric-tube">{Video.title}</a>}
+                                title={<a href="https://github.com/dwiputrapurnawa/me-tube">{Video.title}</a>}
                                 description={Video.description}
                             />
                             <div></div>
